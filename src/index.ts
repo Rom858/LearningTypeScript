@@ -7,8 +7,11 @@
 // Defualt parameter have 2 method to use it
 // 1--hard to understant
 function add(foo: number, bar: number, foobar?: number): number {
-  return foo + bar + (foobar !== undefined ? foobar : 5);
+  return foo + bar + (foobar !== void 0 ? foobar : 5);
 }
+// the void 0 parameter is used by the TypeScript compiler to check whether a variable is equal
+// to undefined
+
 // 2--code is readable
 function add(foo: number, bar: number, foobar: number = 0): number {
   return foo + bar + foobar;
