@@ -22,3 +22,10 @@ add(2, 2, 2); // OK, returns 6d
 
 // parameter foobar?: number mean have or dont have its ok for this parameter
 //============================
+function test() {
+  const undefined = 2;
+  console.log(undefined === void 0);
+  // void 0 = undefined; if we assign undefined as variable when compare it will false
+}
+
+test();
