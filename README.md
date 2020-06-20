@@ -1,2 +1,0 @@
-# LearningTypeScript
-Created with CodeSandbox
